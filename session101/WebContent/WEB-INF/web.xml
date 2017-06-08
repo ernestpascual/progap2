@@ -9,7 +9,9 @@
     <servlet-class>info.ernest.ProcessData</servlet-class>
   </servlet>
       <servlet>
-    <servlet-name>minions</servlet-name>
+      <!-- naming the servlet  -->
+    <servlet-name>minions</servlet-name> 
+     <!--  referencing the servlet location -->
     <servlet-class>info.ernest.ProcessCheckBox</servlet-class>
   </servlet>
   
@@ -18,7 +20,9 @@
     <url-pattern>/snorlax</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
+  <!--  referencing the name servlet -->
     <servlet-name>minions</servlet-name>
+    <!--  desired url -->
     <url-pattern>/banana</url-pattern>
   </servlet-mapping>
 </web-app>
