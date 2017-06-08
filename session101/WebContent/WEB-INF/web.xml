@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>session101</display-name>
+  <welcome-file-list>
+    <welcome-file>inputform.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>pokemon</servlet-name>
+    <servlet-class>info.ernest.ProcessData</servlet-class>
+  </servlet>
+      <servlet>
+    <servlet-name>minions</servlet-name>
+    <servlet-class>info.ernest.ProcessCheckBox</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>pokemon</servlet-name>
+    <url-pattern>/snorlax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>minions</servlet-name>
+    <url-pattern>/banana</url-pattern>
+  </servlet-mapping>
+</web-app>
