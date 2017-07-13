@@ -45,23 +45,28 @@ public class DBservlet extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			
 			
+			
 			// begin table
 			out.println("<body><table border='1'>");
 			out.println("<tr><th> PET CODE </th><th>PET NAME</th>");
 			out.println("<th> PET TYPE </th> <th> PRICE </th> </tr></thead>");
-			
+			 
 			//loop while there is data to create rows
 			while (rs.next()){
+		
 				out.println("<tr>");
 				out.println("<td>" + rs.getString("petID") + "</td>");
 				out.println("<td>" + rs.getString("petName") + "</td>");
 				out.println("<td>" + rs.getString("petType") + "</td>");
 				out.println("<td>" + rs.getString("petPrice") + "</td>");
 				out.println("</tr>");
+	
 			}
 			
 			//end table
-			out.println("</table></body></html>");
+			out.println("</table>");
+			out.println("* <a href='index.html'> Home </a><br>");
+			out.println("<br><h1> By: Ernest Pascual </h1></body></html>");
 			
 			//close connection
 			rs.close();
